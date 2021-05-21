@@ -1,0 +1,79 @@
+block cards
+
+	each val, index in ['1', '2', '3', '4', '5']
+
+		.card
+				.card__header(id=`cardHeader${val}`)
+					a.collapse__target.collapsed(data-toggle="collapse" data-target=`#target${val}` aria-expanded="false" aria-controls=`target${val}`) Box #{val}
+
+				.collapse(id=`target${val}` aria-labelledby=`cardHeader${val}`)
+					.card__body
+						.sc__option--position
+							p.option__title
+								strong Position
+							.inputs__wrapper
+								.input
+									input(type="radio" id="static" name=`position${val}` value="static")
+									label(for="static") Static
+								.input
+									input(type="radio" id="relative" name=`position${val}` value="relative")
+									label(for="relative") Relative
+								.input
+									input(type="radio" id="absolute" name=`position${val}` value="absolute")
+									label(for="absolute") Absolute
+								.input
+									input(type="radio" id="fixed" name=`position${val}` value="fixed")
+									label(for="fixed") Fixed
+								.input
+									input(type="radio" id="sticky" name=`position${val}` value="sticky")
+									label(for="sticky") Sticky
+
+						.sc__option--z-index
+							p.option__title
+								strong Z-index
+
+							.inputs__wrapper
+								.input
+									input(type="radio" id="z-i-none" name=`z-i-${val}` value="0")
+									label(for="z-i-0") 0
+								.input
+									input(type="radio" id="z-i-1" name=`z-i-${val}` value="1")
+									label(for="z-i-1") 1
+								.input
+									input(type="radio" id="z-i-2" name=`z-i-${val}` value="2")
+									label(for="z-i-2") 2
+								.input
+									input(type="radio" id="z-i-3" name=`z-i-${val}` value="3")
+									label(for="z-i-3") 3
+								.input
+									input(type="radio" id="z-i-4" name=`z-i-${val}` value="4")
+									label(for="z-i-4") 4
+								.input
+									input(type="radio" id="z-i-5" name=`z-i-${val}` value="5")
+									label(for="z-i-5") 5
+
+						.sc__option--coord.inputs__wrapper
+							.input
+								input(type="checkbox" id="top" name="top" value="top")
+								p.option__title
+									strong Top (px)
+								input(type="number" disabled="disabled"  id="top-number" name="top-number")
+
+							.input
+								input(type="checkbox" id="right" name="right" value="right")
+								p.option__title
+									strong Right (px)
+								input(type="number" disabled="disabled"  id="right-number" name="right-number")
+
+							.input
+								input(type="checkbox" id="bottom" name="bottom" value="bottom")
+								p.option__title
+									strong Bottom (px)
+								input(type="number" disabled="disabled"  id="bottom-number" name="bottom-number")
+
+							.input
+								input(type="checkbox" id="left" name="left" value="left")
+								p.option__title
+									strong Left (px)
+								input(type="number" disabled="disabled"  id="left-number" name="left-number")
+

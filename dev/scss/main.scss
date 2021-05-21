@@ -1,0 +1,61 @@
+// ----------------------------
+// Main
+// ----------------------------
+
+
+@import 'components/variables';
+@import 'components/section';
+@import 'components/square';
+@import 'components/card';
+@import 'components/options';
+@import 'components/footer';
+
+
+html {
+  overflow-x: hidden;
+  width: 100vw;
+  max-width: 100vw;
+	height: 100%;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+// General
+body {
+	width: 100vw;
+	height: 100%;
+	font-size: 16px;
+	line-height: 1.5;
+	box-sizing: border-box;
+	font-family: Helvetica,Arial,sans-serif;
+	overflow-x: hidden;
+	margin: 0;
+	background: linear-gradient(315deg, #000000 0%, #414141 74%);
+	color: #565e67;
+}
+
+// Flexbox
+.flex {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-items-end {
+  align-items: flex-end;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.text-center {
+  text-align: center;
+}
+
+

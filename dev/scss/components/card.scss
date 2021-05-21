@@ -1,0 +1,122 @@
+// ----------------------------
+// Card
+// ----------------------------
+
+.card {
+	position: relative;
+	margin: 0 1rem 1rem 0;
+	border-radius: .75rem;
+	border: 3px solid #fff;
+	min-height: 3rem;
+	padding: .75rem;
+	color: #fff;
+	backface-visibility: hidden;
+	box-shadow: 5px 7px 10px -5px rgba(0, 0, 0, 0.51);
+	overflow: hidden;
+
+	&:nth-child(1) .option__title {
+		color: #0bbd9399;
+	}
+
+	&:nth-child(2) .option__title {
+		color: #eb403499;
+	}
+
+	&:nth-child(3) .option__title {
+		color: #219e0899;
+	}
+
+	&:nth-child(4) .option__title {
+		color: #c710bb99;
+	}
+
+	&:nth-child(5) .option__title {
+		color: #e8940c99;
+	}
+
+	&:nth-child(6) .option__title {
+		color: #720acc99;
+	}
+
+	&:nth-child(1) {
+		border-color: #0bbd9399;
+	}
+
+	&:nth-child(2) {
+		border-color: #eb403499;
+	}
+
+	&:nth-child(3) {
+		border-color: #219e0899;
+	}
+
+	&:nth-child(4) {
+		border-color: #c710bb99;
+	}
+
+	&:nth-child(5) {
+		border-color: #e8940c99;
+	}
+
+	&:nth-child(6) {
+		border-color: #720acc99;
+	}
+
+	.collapse__target {
+		color: #fff;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+
+		&:after {
+			content: "\f106";
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 900;
+			float: right;
+		}
+		&.collapsed {
+			&:after {
+				content: "\f107";
+			}
+		}
+	}
+
+	&__header {
+		cursor: pointer;
+		font-weight: 700;
+	}
+
+	&__body {
+		flex: 1 1 auto;
+		padding: .5rem 0 0 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+
+	& label {
+		margin-left: .5rem;
+		font-weight: 400;
+		font-size: .925rem;
+	}
+
+	& input[type="checkbox"] {
+		margin-right: .5rem;
+	}
+
+	& .option__title {
+		display: inline-block;
+		margin: 0;
+	}
+
+	& input[type="number"] {
+		margin-left: .5rem;
+		height: 25px;
+		width: 50px;
+		color: #000;
+	}
+
+
+
+}

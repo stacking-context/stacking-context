@@ -1,0 +1,48 @@
+{
+  "name": "stacking-context",
+  "version": "1.0.0",
+  "description": "stacking-context page",
+  "main": "index.html",
+  "scripts": {
+    "babel": "babel dev/js/setStackingContext.js --watch --out-file assets/js/script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sararellano/stacking-context.git"
+  },
+  "author": "Sara Arellano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sararellano/stacking-context/issues"
+  },
+  "homepage": "https://github.com/Sararellano/stacking-context#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^5.0.0",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 versions",
+              "safari >= 7"
+            ]
+          }
+        }
+      ]
+    ]
+  }
+}

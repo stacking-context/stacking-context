@@ -1,0 +1,21 @@
+// ----------------------------
+// Footer
+// ----------------------------
+
+.footer {
+	margin-top: 2rem;
+	text-align: center;
+	color: $c-footer;
+	font-size: .75rem;
+
+	& a {
+		color: $c-footer;
+		text-decoration: underline;
+
+		&:active,
+		&:focus,
+		&:hover {
+			color: $c-footer;
+		}
+	}
+}
