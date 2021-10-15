@@ -33,14 +33,13 @@ html(lang="en")
     section.sc
       .container
         h1.title Stacking Context
-      .row
+      .row.content
         .col-xs-12.col-sm-7
           include layout/intro
         .col-xs-12.col-sm-5.collapse__wrapper
           include layout/cards
-      .row
-        .col-xs-12
-          include layout/footer
+
+      include layout/footer
 
 
     script(src="assets/js/script.js")

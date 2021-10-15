@@ -4,12 +4,12 @@ block intro
 		each val, index in ['1', '2', '3', '4', '5']
 			.square(id=`sq${val}`)
 				strong Box #{val}
-				p#position
-				p#z-index
-				p#top
-				p#right
-				p#bottom
-				p#left
+				p(id=`position${val}`)
+				p(id=`z-index${val}`)
+				p(id=`top${val}`)
+				p(id=`right${val}`)
+				p(id=`bottom${val}`)
+				p(id=`left${val}`)
 
 	p.sc__description
 		strong ❗️Note:
@@ -18,4 +18,5 @@ block intro
 		|
 		|
 		code position: relative
+
 

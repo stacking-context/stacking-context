@@ -13,20 +13,20 @@ block cards
 								strong Position
 							.inputs__wrapper
 								.input
-									input(type="radio" id="static" name=`position${val}` value="static")
-									label(for="static") Static
+									input(type="radio" id=`static${val}` name=`position${val}` value="static")
+									label(for=`static${val}`) Static
 								.input
-									input(type="radio" id="relative" name=`position${val}` value="relative")
-									label(for="relative") Relative
+									input(type="radio" id=`relative${val}` name=`position${val}` value="relative")
+									label(for=`relative${val}`) Relative
 								.input
-									input(type="radio" id="absolute" name=`position${val}` value="absolute")
-									label(for="absolute") Absolute
+									input(type="radio" id=`absolute${val}` name=`position${val}` value="absolute")
+									label(for=`absolute${val}`) Absolute
 								.input
-									input(type="radio" id="fixed" name=`position${val}` value="fixed")
-									label(for="fixed") Fixed
+									input(type="radio" id=`fixed${val}` name=`position${val}` value="fixed")
+									label(for=`fixed${val}`) Fixed
 								.input
-									input(type="radio" id="sticky" name=`position${val}` value="sticky")
-									label(for="sticky") Sticky
+									input(type="radio" id=`sticky${val}` name=`position${val}` value="sticky")
+									label(for=`sticky${val}`) Sticky
 
 						.sc__option--z-index
 							p.option__title
@@ -34,46 +34,50 @@ block cards
 
 							.inputs__wrapper
 								.input
-									input(type="radio" id="z-i-none" name=`z-i-${val}` value="0")
-									label(for="z-i-0") 0
+									input(type="radio" id=`z-i-none--${val}` name=`z-i-${val}` value="0")
+									label(for=`z-i-0--${val}`) 0
 								.input
-									input(type="radio" id="z-i-1" name=`z-i-${val}` value="1")
-									label(for="z-i-1") 1
+									input(type="radio" id=`z-i-1--${val}` name=`z-i-${val}` value="1")
+									label(for=`z-i-1--${val}`) 1
 								.input
-									input(type="radio" id="z-i-2" name=`z-i-${val}` value="2")
-									label(for="z-i-2") 2
+									input(type="radio" id=`z-i-2--${val}` name=`z-i-${val}` value="2")
+									label(for=`z-i-2--${val}`) 2
 								.input
-									input(type="radio" id="z-i-3" name=`z-i-${val}` value="3")
-									label(for="z-i-3") 3
+									input(type="radio" id=`z-i-3--${val}` name=`z-i-${val}` value="3")
+									label(for=`z-i-3--${val}`) 3
 								.input
-									input(type="radio" id="z-i-4" name=`z-i-${val}` value="4")
-									label(for="z-i-4") 4
+									input(type="radio" id=`z-i-4--${val}` name=`z-i-${val}` value="4")
+									label(for=`z-i-4--${val}`) 4
 								.input
-									input(type="radio" id="z-i-5" name=`z-i-${val}` value="5")
-									label(for="z-i-5") 5
+									input(type="radio" id=`z-i-5--${val}` name=`z-i-${val}` value="5")
+									label(for=`z-i-5--${val}`) 5
 
 						.sc__option--coord.inputs__wrapper
 							.input
-								input(type="checkbox" id="top" name="top" value="top")
+								input(type="checkbox" id=`top${val}` name=`top${val}` value="top")
 								p.option__title
 									strong Top (px)
-								input(type="number" disabled="disabled"  id="top-number" name="top-number")
+								input(type="number" disabled="disabled"  id=`top-number${val}` name=`top-number${val}`)
 
 							.input
-								input(type="checkbox" id="right" name="right" value="right")
+								input(type="checkbox" id=`right${val}` name=`right${val}` value="right")
 								p.option__title
 									strong Right (px)
-								input(type="number" disabled="disabled"  id="right-number" name="right-number")
+								input(type="number" disabled="disabled"  id=`right-number${val}` name=`right-number${val}`)
 
 							.input
-								input(type="checkbox" id="bottom" name="bottom" value="bottom")
+								input(type="checkbox" id=`bottom${val}` name=`bottom${val}` value="bottom")
 								p.option__title
 									strong Bottom (px)
-								input(type="number" disabled="disabled"  id="bottom-number" name="bottom-number")
+								input(type="number" disabled="disabled"  id=`bottom-number${val}` name=`bottom-number${val}`)
 
 							.input
-								input(type="checkbox" id="left" name="left" value="left")
+								input(type="checkbox" id=`left${val}` name=`left${val}` value="left")
 								p.option__title
 									strong Left (px)
-								input(type="number" disabled="disabled"  id="left-number" name="left-number")
+								input(type="number" disabled="disabled"  id=`left-number${val}` name=`left-number${val}`)
+
+
+	//- .text-center
+	//- 	button#clear.sc__reset Clean all values
 
